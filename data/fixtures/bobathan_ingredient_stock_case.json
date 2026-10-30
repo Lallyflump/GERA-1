@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "business_id": "synthetic-bakery",
+  "stock_as_of": "2026-09-20",
+  "stock": [
+    {
+      "item_id": "ING-FLOUR",
+      "name": "Plain flour",
+      "category": "ingredient",
+      "unit": "g",
+      "count_status": "Counted",
+      "on_hand": "2500",
+      "reserved": "500"
+    },
+    {
+      "item_id": "ING-EGGS",
+      "name": "Large eggs",
+      "category": "ingredient",
+      "unit": "each",
+      "count_status": "Counted",
+      "on_hand": "0",
+      "reserved": "0"
+    },
+    {
+      "item_id": "ING-BUTTER",
+      "name": "Unsalted butter",
+      "category": "ingredient",
+      "unit": "g",
+      "count_status": "Unknown",
+      "on_hand": null,
+      "reserved": null
+    }
+  ],
+  "requirements": [
+    {
+      "item_id": "ING-FLOUR",
+      "name": "Plain flour",
+      "required": "1500",
+      "unit": "g"
+    },
+    {
+      "item_id": "ING-EGGS",
+      "name": "Large eggs",
+      "required": "12",
+      "unit": "each"
+    },
+    {
+      "item_id": "ING-BUTTER",
+      "name": "Unsalted butter",
+      "required": "500",
+      "unit": "g"
+    }
+  ]
+}

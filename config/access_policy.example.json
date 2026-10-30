@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "local_principal": {
+    "actor_id": "synthetic-owner"
+  },
+  "grants": [
+    {
+      "actor_id": "synthetic-owner",
+      "business_id": "synthetic-bakery",
+      "capabilities": [
+        "finance:affordability:read",
+        "operations:financial_calendar:read",
+        "inventory:ingredient_availability:read"
+      ]
+    }
+  ]
+}

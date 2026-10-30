@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1-design",
+  "business_id": "reference-bakery",
+  "legal_name": "A Moment of Escape Ltd",
+  "trading_name": "Lisa's Little Bakery",
+  "timezone": "Europe/London",
+  "currency": "GBP",
+  "data_mode": "synthetic",
+  "orchestrator": {
+    "name": "Toby",
+    "model_family": "NVIDIA Nemotron",
+    "model_id": null
+  },
+  "strands": [
+    {
+      "id": "inventory",
+      "name": "Back of House Inventory",
+      "agent_name": "Bobathan",
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "reception",
+      "name": "Reception",
+      "agent_name": "Ivy",
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "agent_name": "Saul",
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "operations",
+      "name": "Time & Operations",
+      "agent_name": "Galgali",
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "front_of_house",
+      "name": "Front of House",
+      "agent_name": null,
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "admin_compliance",
+      "name": "Admin & Compliance",
+      "agent_name": null,
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "provenance",
+      "name": "Provenance & Traceability",
+      "agent_name": null,
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "recipes",
+      "name": "Recipes & Product Library",
+      "agent_name": null,
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & Newsletter",
+      "agent_name": null,
+      "implementation_status": "placeholder"
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics & Forecasting",
+      "agent_name": null,
+      "implementation_status": "placeholder"
+    }
+  ],
+  "policy": {
+    "default_access": "deny",
+    "initial_mode": "read_only",
+    "spending_limit_minor": null
+  }
+}

@@ -1,0 +1,22 @@
+GERALD + BAKERY INTERFACE — LOCAL DEMONSTRATION
+
+This bundle retains GERA-1's October 7 foundation and the coordination interface.
+It runs the EXISTING offline brownie workflow from Python, using SYNTHETIC fixture data only.
+It does not use real business inventory, send emails, place orders or call Nemotron.
+
+CHROMEBOOK — Linux Terminal:
+1. Move this unpacked GERA-1 folder to Linux files, if necessary.
+2. Open the Terminal in the GERA-1 folder.
+3. Install dependencies if needed:
+   python3 -m pip install --user openpyxl==3.1.5
+4. Run:
+   PYTHONPATH=src python3 local_bridge.py
+5. Open Chrome at:
+   http://127.0.0.1:8765
+6. Ask Toby: 'Can we fulfil a brownie order?'
+
+Only brownie questions are routed to real offline backend calculation;
+other questions retain the visual scripted demonstration.
+The backend runs on localhost (not the public internet).
+Stop it with Ctrl+C in the terminal.
+NEVER put your keys in browser scripts or upload an .env file.

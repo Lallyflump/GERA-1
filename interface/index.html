@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>GERA-1 · Bakery Operating System</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<div class="intro" id="intro">
+ <div class="medallion" id="medal"><div class="medallion-inner" id="medalInner"><div class="medallion-face front"><img src="assets/medallion-front.webp" alt=""></div><div class="medallion-face back"><img src="assets/medallion-back.webp" alt=""></div></div><div class="gem-glow"></div></div>
+ <div class="intro-motto">Different minds · A more capable tomorrow</div>
+ <button class="outline skip" id="skip">Skip introduction →</button>
+</div>
+<div class="gem-float" id="gem" aria-hidden="true"><div class="gem-inner" id="gemInner"><div class="gem-face stone"><img src="assets/toby-gem.png" alt=""></div><div class="gem-face portrait"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/toby.webp" alt=""><img class="avatar-jewel" src="assets/toby-jewel.png" alt=""></span></span></div></div></div>
+<div class="app" id="app">
+ <aside class="sidebar" aria-label="Primary navigation">
+  <div class="brand"><span class="brand-icon">✦</span><div><b>GERA-1</b><small>PEOPLE AND AI.<br>A BRIGHTER TOMORROW.</small></div></div>
+  <div class="side-divider"></div>
+  <div class="nav-heading">YOUR BAKERY</div>
+  <nav class="primary-nav" aria-label="Bakery sections">
+   <button data-view="home" class="nav active"><span class="nav-icon">⌂</span> Dashboard</button>
+   <button data-view="front" class="nav"><span class="nav-icon">◈</span> Front of House</button>
+   <button data-view="ingredients" class="nav"><span class="nav-icon">✿</span> Ingredients</button>
+   <button data-view="orders" class="nav"><span class="nav-icon">▣</span> Orders</button>
+   <button data-view="finance" class="nav"><span class="nav-icon">£</span> Finance</button>
+   <button data-view="calendar" class="nav"><span class="nav-icon">▦</span> Calendar</button>
+  </nav>
+  <div class="side-divider"></div>
+  <div class="nav-heading">YOUR TEAM</div>
+  <div class="team">
+   <button class="agent selected" data-agent="toby"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/toby.webp" alt=""><img class="avatar-jewel" src="assets/toby-jewel.png" alt=""></span></span><span><strong>Toby</strong><small>Orchestrator</small></span><span class="agent-light"></span><span class="agent-work-state" aria-hidden="true"></span></button>
+   <button class="agent" data-agent="saul"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/saul.webp" alt=""><img class="avatar-jewel" src="assets/saul-jewel.png" alt=""></span></span><span><strong>Saul</strong><small>Finance</small></span><span class="agent-work-state" aria-hidden="true"></span></button>
+   <button class="agent" data-agent="bobathan"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/bobathan.webp" alt=""><img class="avatar-jewel" src="assets/bobathan-jewel.png" alt=""></span></span><span><strong>Bobathan</strong><small>Back of House</small></span><span class="agent-work-state" aria-hidden="true"></span></button>
+   <button class="agent" data-agent="galgali"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/galgali.webp" alt=""><img class="avatar-jewel" src="assets/galgali-jewel.png" alt=""></span></span><span><strong>Galgali</strong><small>Time &amp; Operations</small></span><span class="agent-work-state" aria-hidden="true"></span></button>
+   <button class="agent" data-agent="ivy"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/ivy.webp" alt=""><img class="avatar-jewel" src="assets/ivy-jewel.png" alt=""></span></span><span><strong>Ivy</strong><small>Reception</small></span><span class="agent-work-state" aria-hidden="true"></span></button>
+   <button class="agent" data-agent="thibault"><span class="agent-avatar"><span class="agent-avatar-inner"><img class="avatar-photo" src="assets/thibault.webp" alt=""><img class="avatar-jewel" src="assets/thibault-jewel.png" alt=""></span></span><span><strong>Thibault</strong><small>Front of House</small></span><span class="agent-work-state" aria-hidden="true"></span></button>
+  </div>
+  <div class="side-footer">GENERALISED EXECUTIVE REASONING<br>&amp; AGENTIC LOGIC</div>
+ </aside>
+ <main class="main" id="main">
+  <header class="topbar"><div class="top-title"><div class="overline">A MOMENT OF ESCAPE · LISA'S LITTLE BAKERY</div><h1 id="pageTitle">Your bakery, at a glance</h1></div><div class="top-actions"><button class="outline" data-view="calendar" id="calendarShortcut">▦ Calendar</button><button class="outline" id="replay">↻ Replay entrance</button></div></header>
+  <div class="demo-banner"><span class="demo-dot"></span><b>INTERACTIVE PREVIEW</b><span>Not connected to your live GERA-1 system. Entries stay in this browser.</span><button id="sampleData" class="text-button">Load sample data</button><button id="clearData" class="text-button subtle">Clear preview data</button></div>
+  <div id="homeView" class="view active">
+   <div class="hero">
+    <div class="portrait-card"><img id="mainPortrait" src="assets/toby.webp" alt="Toby, central orchestrator"><div class="portrait-caption"><strong id="portraitName">TOBY</strong><span id="portraitRole">CENTRAL ORCHESTRATOR</span></div></div>
+    <div class="hero-copy"><span class="eyebrow">YOUR CENTRAL ORCHESTRATOR</span><h2 id="heroHeading">Welcome to GERA-1</h2><div class="gold-rule"></div><p id="heroBody">I’m Toby, your orchestrator. We can talk through public information and invented examples. The handoff preview shows how specialist coordination could work.</p><p class="hero-note">Direct access for everyday work. Intelligent support when you need it.</p><button type="button" class="handoff-link" id="tryHandoff">✧ See Toby bring the specialists together →</button></div>
+   </div>
+   <div class="section-heading"><h2>Bakery operations</h2><span>Open a section directly — no need to ask Toby</span></div>
+   <div class="module-grid">
+    <button class="module" data-view="front"><img src="assets/front.webp" alt="Cupcakes on display"><div class="module-body"><span class="module-icon">◈</span><strong>FRONT OF HOUSE</strong><small>Finished stock &amp; products</small><span class="arrow">↗</span></div></button>
+    <button class="module" data-view="ingredients"><img src="assets/ingredients.webp" alt="Baking ingredients"><div class="module-body"><span class="module-icon">✿</span><strong>INGREDIENTS</strong><small>Inventory &amp; suppliers</small><span class="arrow">↗</span></div></button>
+    <button class="module" data-view="orders"><img src="assets/orders.webp" alt="Boxed cupcakes"><div class="module-body"><span class="module-icon">▣</span><strong>ORDERS</strong><small>Order book &amp; fulfilment</small><span class="arrow">↗</span></div></button>
+    <button class="module" data-view="finance"><img src="assets/finance.webp" alt="Accounts and calculator"><div class="module-body"><span class="module-icon">£</span><strong>FINANCE</strong><small>Money &amp; planning</small><span class="arrow">↗</span></div></button>
+   </div>
+   <button class="calendar-strip" data-view="calendar"><span>▦</span><span><strong>Calendar &amp; deadlines</strong><small>See what's due, and plan your baking days.</small></span><b>OPEN CALENDAR →</b></button>
+  </div>
+  <section id="dataView" class="view" aria-live="polite"><div class="section-head"><div><span class="eyebrow" id="sectionEyebrow">BAKERY OPERATIONS</span><h2 id="sectionTitle">Orders</h2><p id="sectionDescription">Your bakery records.</p></div><button id="addRecord" class="gold-button">+ Add record</button></div><div id="sectionSummary" class="stat-row"></div><div id="sectionContent" class="data-card"></div></section>
+  <section id="calendarView" class="view"><div class="section-head"><div><span class="eyebrow">TIME &amp; OPERATIONS · GALGALI</span><h2>Bakery calendar</h2><p>Open the calendar directly to see orders and planned events.</p></div><button class="gold-button" id="addEvent">+ Add event</button></div><div class="calendar-toolbar"><button id="prevMonth" class="outline" aria-label="Previous month">←</button><h3 id="monthTitle"></h3><button id="nextMonth" class="outline" aria-label="Next month">→</button><button id="todayMonth" class="outline">Today</button></div><div class="calendar-card"><div class="calendar-grid" id="calendarGrid"></div></div><div class="calendar-list"><h3>Dates in this month</h3><div id="calendarAgenda"></div></div></section>
+
+  <section id="coordView" class="view" aria-labelledby="coordTitle">
+   <div class="coord-heading">
+    <button type="button" class="outline" id="backFromCoord">← Back to your bakery</button>
+    <div class="coord-heading-copy"><span class="eyebrow">TOBY · COORDINATION ROOM</span><h2 id="coordTitle">Bringing the right minds together</h2><p class="coord-question" id="coordQuestion">Your question will appear here.</p></div>
+    <button type="button" class="outline" id="rerunCoord">↻ Replay handoff</button>
+   </div>
+   <div class="coord-stage" id="coordGrid">
+    <div class="coord-main">
+     <div class="toby-workspace"><img src="assets/toby.webp" alt="Toby, your central orchestrator" class="toby-work-photo"><div><span class="eyebrow">CENTRAL ORCHESTRATOR</span><h3>Toby is coordinating</h3><p id="coordNarrative">I'll work out who needs to help.</p><div class="status-pill" id="coordState" role="status" aria-live="polite">Preparing the handoff…</div></div></div>
+     <div class="handoff-heading"><div><span class="eyebrow">THE TEAM IN ACTION</span><h3>Specialists called in</h3></div><span class="handoff-legend"><i></i> Gem = called · glow = working</span></div>
+     <div id="handoffGrid" class="handoff-grid" aria-label="Specialist handoffs"></div>
+     <div class="toby-result" id="tobyResult" aria-live="polite"><div class="result-icon">✧</div><div><span class="eyebrow">TOBY'S RESPONSE</span><h3 id="resultTitle">Gathering the pieces…</h3><p id="resultBody">The team activity will appear here as Toby coordinates the specialists.</p><div class="result-details" id="resultDetails"></div></div></div>
+    </div>
+    <aside class="coord-activity"><div class="activity-title"><span class="eyebrow">ACTIVITY TRAIL</span><h3>Who's doing what?</h3></div><div class="activity-note" id="activityNote">This is a <strong>visual simulation</strong> of the handoff. The GERA-1 backend is not connected, and no live data is being checked.</div><ol id="activityList" class="activity-list" aria-label="Demonstration activity"></ol><div class="coord-tip"><strong id="coordTipTitle">When connected</strong><p id="coordTipBody">Each step will display the real agent request, its result and the evidence Toby used.</p></div></aside>
+   </div>
+  </section>
+  <div class="chat-dock" id="chatDock"><div class="chat-label"><div><span class="blue-dot"></span><b>ASK TOBY</b> <span class="muted">· your orchestrator, available from every section</span></div><button id="toggleChat" class="text-button" aria-expanded="false">Show conversation ↑</button></div><div class="messages" id="messages" hidden><div class="bubble bot">Hello, I’m Toby. We can discuss public information and invented examples. I can coordinate a fixed synthetic brownie check with Bobathan and Saul through the local backend. I cannot read real business records or take actions. Use Run brownie demo for the separate worked example.</div></div><form id="chatForm" class="composer"><label class="sr-only" for="question">Ask Toby</label><input id="question" placeholder="Ask Toby about a public or invented example…" maxlength="1000" autocomplete="off" aria-describedby="chatPolicy"><button type="submit" class="send" id="chatSend">SEND ↗</button></form><div class="chat-foot" id="chatControls"><button type="button" class="text-button" id="runBrownieDemo">Run brownie demo</button> · <button type="button" class="text-button" id="clearConversation">Clear conversation</button></div><div class="chat-foot" id="chatPolicy">Public/synthetic messages only. Live chat sends your message and recent chat history to Nebius. Never paste private business information or secrets.</div><div class="chat-foot" id="chatFoot" role="status" aria-live="polite">Read-only conversation · recent chat stays in this tab’s memory · no business records sent.</div></div>
+ </main>
+</div>
+<dialog id="entryDialog"><form id="entryForm"><div class="dialog-top"><div><span class="eyebrow" id="dialogEyebrow">BAKERY RECORD</span><h2 id="dialogTitle">Add record</h2></div><button class="close" type="button" id="closeDialog" aria-label="Close">×</button></div><div id="entryFields" class="entry-fields"></div><div class="dialog-actions"><button class="outline" type="button" id="cancelDialog">Cancel</button><button class="gold-button" type="submit">Save in preview</button></div></form></dialog>
+<script src="script.js"></script></body></html>

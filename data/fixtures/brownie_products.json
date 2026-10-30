@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "business_id": "synthetic-bakery",
+  "description": "Invented arithmetic fixture, NOT Lisa's recipe and NOT for baking or sale.",
+  "products": [{"product_id": "SYN-BROWNIE", "name": "Synthetic brownie", "unit": "piece", "source_ref": "synthetic:product-fixture", "recipe": {"recipe_id": "SYN-RECIPE", "version": "1"}}],
+  "recipes": [{"recipe_id": "SYN-RECIPE", "version": "1", "status": "draft", "source_ref": "synthetic:recipe-fixture", "yield": {"quantity": "12", "unit": "piece"}, "scaling": "whole_batches", "allergens": null, "ingredients": [
+    {"item_id": "ING-FLOUR", "name": "Flour", "quantity": "150", "unit": "g"},
+    {"item_id": "ING-EGGS", "name": "Eggs", "quantity": "2", "unit": "each"},
+    {"item_id": "ING-BUTTER", "name": "Butter", "quantity": "100", "unit": "g"}
+  ]}]
+}

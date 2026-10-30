@@ -1,0 +1,27 @@
+# Python and tools
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+# Secrets and local state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Private and generated business data
+data/private/
+data/runtime/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.DS_Store
+
+# Local hackathon submission state
+.devpost-hackathon-state.json

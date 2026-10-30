@@ -1,0 +1,72 @@
+{
+  "fixture_type": "synthetic",
+  "description": "Invented public cases for Saul's deterministic affordability calculation.",
+  "currency": "GBP",
+  "cases": [
+    {
+      "id": "affordable",
+      "inputs": {
+        "balance_minor": 5000,
+        "posted_net_minor": -250,
+        "expected_income_minor": 1000,
+        "expected_outgoings_minor": 2250,
+        "proposed_expense_minor": 1200,
+        "proposal_id": "SYN-AFFORDABLE",
+        "check_through": "2026-10-31",
+        "calendar_check": "not_available"
+      },
+      "expected": {
+        "status": "ok",
+        "affordable": true,
+        "remaining_minor": 2300,
+        "shortfall_minor": 0,
+        "flags": ["calendar_not_checked"]
+      }
+    },
+    {
+      "id": "unaffordable",
+      "inputs": {
+        "balance_minor": 3000,
+        "posted_net_minor": 0,
+        "expected_income_minor": 0,
+        "expected_outgoings_minor": 2500,
+        "proposed_expense_minor": 750,
+        "proposal_id": "SYN-UNAFFORDABLE",
+        "check_through": "2026-10-31",
+        "calendar_check": "available"
+      },
+      "expected": {
+        "status": "ok",
+        "affordable": false,
+        "remaining_minor": -250,
+        "shortfall_minor": 250,
+        "flags": []
+      }
+    },
+    {
+      "id": "missing_commitments",
+      "inputs": {
+        "balance_minor": 6000,
+        "posted_net_minor": 0,
+        "expected_income_minor": null,
+        "expected_outgoings_minor": null,
+        "proposed_expense_minor": 1000,
+        "proposal_id": "SYN-MISSING",
+        "check_through": "2026-10-31",
+        "calendar_check": "unknown",
+        "known_missing_fields": ["commitments_confirmation"]
+      },
+      "expected": {
+        "status": "needs_information",
+        "affordable": null,
+        "missing_fields": [
+          "commitments_confirmation",
+          "expected_income_minor",
+          "expected_outgoings_minor"
+        ],
+        "flags": ["calendar_status_missing"]
+      }
+    }
+  ]
+}
+

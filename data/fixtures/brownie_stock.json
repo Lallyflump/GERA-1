@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "business_id": "synthetic-bakery",
+  "description": "Invented test counts only. No real stock has been supplied.",
+  "stock_as_of": "2026-10-07",
+  "stock": [
+    {"item_id": "SYN-BROWNIE", "category": "finished_product", "name": "Synthetic brownie", "unit": "piece", "count_status": "Unknown", "on_hand": null, "reserved": null, "source_ref": "synthetic:finished-stock", "batch_ref": null, "movement_ref": null},
+    {"item_id": "ING-FLOUR", "category": "ingredient", "name": "Flour", "unit": "g", "count_status": "Counted", "on_hand": "1000", "reserved": "100", "source_ref": "synthetic:flour-count", "batch_ref": null, "movement_ref": null},
+    {"item_id": "ING-EGGS", "category": "ingredient", "name": "Eggs", "unit": "each", "count_status": "Counted", "on_hand": "0", "reserved": "0", "source_ref": "synthetic:egg-count", "batch_ref": null, "movement_ref": null},
+    {"item_id": "ING-BUTTER", "category": "ingredient", "name": "Butter", "unit": "g", "count_status": "Unknown", "on_hand": null, "reserved": null, "source_ref": "synthetic:butter-unknown", "batch_ref": null, "movement_ref": null}
+  ]
+}

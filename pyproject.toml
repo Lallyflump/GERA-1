@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gera1"
+version = "0.5.1"
+description = "Policy-gated deterministic finance, operations and inventory foundation for GERA-1"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl==3.1.5",
+]
+
+[project.scripts]
+gera1 = "gera1.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
